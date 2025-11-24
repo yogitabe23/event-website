@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0a0a0f;
+    color: #fff;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #3d007a, #8c00ff);
+    padding: 15px 25px;
+    border-bottom: 1px solid #7d2cff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 45px;
+    filter: drop-shadow(0 0 10px #ff2fff);
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffb7ff;
+    text-shadow: 0 0 12px #ff38ff;
+}
+
+.nav-links {
+    margin-left: auto;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: #ff2fff;
+    box-shadow: 0 0 12px #ff2fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #3d007a, #0a0a0f);
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #ffb7ff;
+    text-shadow: 0 0 15px #ff38ff;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.event-list {
+    font-size: 20px;
+    line-height: 2;
+    padding-left: 20px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    background: #1b1b22;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.schedule-table th {
+    background: #8c00ff;
+    padding: 12px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.schedule-table td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+}
+
+.schedule-table tr:hover {
+    background: #2a2a33;
+}
+
+.reg-form {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #1b1b22;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #8c00ff;
+}
+
+.reg-form input,
+.reg-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.reg-form button {
+    padding: 12px;
+    background: #8c00ff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reg-form button:hover {
+    background: #ff2fff;
+    box-shadow: 0 0 15px #ff2fff;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #8c00ff;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff2fff;
+}
+
+ul {
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+h2, h3 {
+    color: #ffb7ff;
+    text-shadow: 0 0 10px #ff38ff;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+
+@media (max-width: 750px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    .brand {
+        width: 100%;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+
+    .logo {
+        width: 35px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+
+    .schedule-table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
